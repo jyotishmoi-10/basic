@@ -1,0 +1,99 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial, sans-serif';
+    line-height: 1.6;
+    background: url('images/galaxy.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    padding: 20px;
+}
+
+/* Header Styling */
+header {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content Styling */
+main {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    max-width: 800px;
+    margin: auto;
+}
+
+main .section {
+    margin-bottom: 20px;
+}
+
+main h2 {
+    color: #4CAF50;
+    margin-bottom: 10px;
+}
+
+main p, main ul {
+    margin-bottom: 10px;
+}
+
+main img {
+    width: 100%;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.planet-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.planet-images img {
+    width: calc(50% - 10px);
+    margin-bottom: 10px;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    border-radius: 0 0 10px 10px;
+    margin-top: 20px;
+}
