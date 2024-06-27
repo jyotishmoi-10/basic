@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Solar System</title>
+    <title>Feedback</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -19,7 +19,7 @@
                         <a href="pages/venus.html">Venus</a>
                         <a href="pages/earth.html">Earth</a>
                         <a href="pages/mars.html">Mars</a>
-                        <a href="pages/jupiter.html">Jupiter</a>
+                        <a href="pages/jupitar.html">Jupiter</a>
                         <a href="pages/saturn.html">Saturn</a>
                         <a href="pages/uranus.html">Uranus</a>
                         <a href="pages/neptune.html">Neptune</a>
@@ -31,15 +31,40 @@
         </nav>
     </header>
     <main>
-        <section id="intro" class="section">
-            <h2>Introduction</h2>
-            <p>The Solar System is the gravitationally bound system of the Sun and the objects that orbit it, either directly or indirectly. Of the objects that orbit the Sun directly, the largest are the eight planets, with the remainder being smaller objects, such as dwarf planets and small Solar System bodies.</p>
-            <img src="https://www.shutterstock.com/image-photo/solar-system-planet-comet-sun-260nw-1029243295.jpg" alt="Solar System">
+        <section id="feedback" class="section">
+            <h2>Feedback</h2>
+            <form id="feedbackForm">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="Username">
+                <span class="error"></span>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="Email">
+                <span class="error"></span>
+
+                <label for="feedback">Feedback:</label>
+                <textarea id="feedback" name="Feedback"></textarea>
+                <span class="error"></span>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        <section id="dynamicContent" class="section">
+            <h2>Submitted Feedback</h2>
         </section>
     </main>
     <footer>
         <p>&copy; 2024 The Solar System. All rights reserved.</p>
     </footer>
+
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <h2>Success!</h2>
+            <p>Your feedback has been successfully submitted.</p>
+            <button id="closeModal">Close</button>
+        </div>
+    </div>
+
     <script src="scripts.js"></script>
 </body>
 </html>
